@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_step" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tabbar" android:background="#0000" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="9dp">
+        <RelativeLayout android:gravity="center" android:id="@+id/tabbar_infolayout1" android:background="@drawable/bg_steptitle_select" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="1dp" android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_infotitle1" style="@style/text17sp_center"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/tabbar_infolayout2" android:background="@drawable/bg_steptitle_noselect" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="1dp" android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_infotitle2" style="@style/text17sp_center"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/tabbar_infolayout3" android:background="@drawable/bg_steptitle_noselect" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="1dp" android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_infotitle3" style="@style/text17sp_center"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/tabbar_title" android:background="@drawable/bg_steptitle" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/tabbar">
+        <TextView android:id="@+id/tabbar_titletext" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_infotitle1" style="@style/text17sp_center"/>
+    </RelativeLayout>
+    <ViewFlipper android:id="@+id/stepflipper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabbar_title"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+    <RelativeLayout android:id="@+id/toastbox" android:background="@drawable/com_rounded_corner" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/mainicon" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" style="@r$style/img_basic"/>
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="2" android:layout_toRightOf="@+id/mainicon" android:layout_alignTop="@+id/mainicon" android:layout_alignBottom="@+id/mainicon"/>
+    </RelativeLayout>
+</LinearLayout>

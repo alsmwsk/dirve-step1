@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#0000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/productimage" android:background="#0000" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:scaleType="centerInside"/>
+    <TextView android:textSize="14dp" android:textColor="#7f7f7f" android:gravity="center_vertical" android:id="@+id/productval" android:background="#0000" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/productimage" android:layout_alignBottom="@+id/productimage" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/productnm" android:background="#0000" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/productval" android:layout_toRightOf="@+id/productimage" android:layout_alignTop="@+id/productimage" android:layout_alignBottom="@+id/productimage"/>
+</RelativeLayout>

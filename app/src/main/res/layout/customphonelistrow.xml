@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="#0000" android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="10">
+    <CheckBox android:id="@+id/phone_chk" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <TextView android:id="@+id/phone_name" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" style="@r$style/text17sp_left_black"/>
+    <TextView android:id="@+id/phone_number" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="7" style="@r$style/text17sp_left_black"/>
+</LinearLayout>

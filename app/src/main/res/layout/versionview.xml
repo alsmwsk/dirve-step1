@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/topbg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="match_parent" android:layout_height="40dp" android:src="@drawable/icon_logo" style="@r$style/img_basic"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/car" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginTop="10dp" android:src="@drawable/icon_car" android:layout_below="@+id/logo" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/curvertext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/car" style="@r$style/text20sp_center"/>
+        <TextView android:textColor="#ffeb89" android:id="@+id/latestvertext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/curvertext" style="@r$style/text20sp_center"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/update_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/latestvertext">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Button android:id="@+id/updatebtn" android:background="@drawable/btn_basic_green" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_versionupdate" android:layout_weight="2" style="@r$style/text20sp_center"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/comlogo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/comlogo" android:layout_below="@+id/update_layout" style="@r$style/img_basic"/>
+        <TextView android:layout_gravity="center" android:id="@+id/copyright" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/copyright" android:layout_below="@+id/comlogo" style="@r$style/text12sp_center"/>
+    </RelativeLayout>
+</RelativeLayout>

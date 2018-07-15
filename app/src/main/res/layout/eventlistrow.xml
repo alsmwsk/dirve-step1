@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#0000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/eventrow_text" android:background="#0000" android:padding="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/eventrow_text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@+id/eventrow_text_img" style="@r$style/text17sp_left_black"/>
+        <ImageView android:id="@+id/eventrow_text_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_arrow_left" android:layout_alignTop="@+id/eventrow_text_title" android:layout_alignBottom="@+id/eventrow_text_title" style="@r$style/img_basic"/>
+        <TextView android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/eventrow_text_content" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/eventrow_text_title" style="@r$style/text14sp_left_black"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/eventrow_image" android:background="#0000" android:padding="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/eventrow_img_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@+id/eventrow_img_img" style="@r$style/text17sp_left_black"/>
+        <ImageView android:id="@+id/eventrow_img_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_arrow_left" android:layout_alignTop="@+id/eventrow_img_title" android:layout_alignBottom="@+id/eventrow_img_title" style="@r$style/img_basic"/>
+        <ImageView android:id="@+id/eventrow_img_imageview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/eventrow_img_title" style="@r$style/img_basic"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/eventrow_web" android:background="#0000" android:padding="5dp" android:layout_width="match_parent" android:layout_height="200dp">
+        <TextView android:id="@+id/eventrow_web_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@+id/eventrow_web_img" style="@r$style/text17sp_left_black"/>
+        <ImageView android:id="@+id/eventrow_web_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_arrow_left" android:layout_alignTop="@+id/eventrow_web_title" android:layout_alignBottom="@+id/eventrow_web_title" style="@r$style/img_basic"/>
+        <WebView android:id="@+id/eventrow_web_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_below="@+id/eventrow_web_title"/>
+        <ImageView android:id="@+id/webview_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:src="@drawable/bg_web_error" android:layout_below="@+id/eventrow_web_title" style="@r$style/img_basic_white"/>
+        <ImageButton android:id="@+id/eventrow_web_webbtn" android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_below="@+id/eventrow_web_title" android:contentDescription="@string/img_text"/>
+    </RelativeLayout>
+</RelativeLayout>

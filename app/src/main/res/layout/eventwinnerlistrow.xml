@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#0000" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/winnerrow_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/winnerrow_img" style="@r$style/text17sp_left_black"/>
+    <ImageView android:id="@+id/winnerrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_arrow_left" android:layout_alignTop="@+id/winnerrow_title" android:layout_alignBottom="@+id/winnerrow_title" style="@r$style/img_basic"/>
+    <TextView android:id="@+id/winnerrow_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/winnerrow_title" style="@r$style/text14sp_left_black"/>
+</RelativeLayout>

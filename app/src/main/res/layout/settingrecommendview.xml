@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_recommendinfo" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/tabbar" style="@r$style/content_bg">
+        <TextView android:id="@+id/recommend_etc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" style="@r$style/text12sp_left_black"/>
+        <TextView android:id="@+id/recommend" android:layout_width="80dp" android:layout_height="40dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:text="@string/text_recommend" android:layout_below="@+id/recommend_etc" style="@r$style/text17sp_center_black"/>
+        <EditText android:id="@+id/recommendedit" android:background="@drawable/bg_edit_grey" android:layout_width="match_parent" android:layout_height="40dp" android:maxLength="20" android:layout_toRightOf="@+id/recommend" android:layout_below="@+id/recommend_etc" android:inputType="number" style="@r$style/number_type_black"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/recommendedit">
+            <Button android:id="@+id/recommend_compbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_save_text" style="@r$style/step_next_button"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

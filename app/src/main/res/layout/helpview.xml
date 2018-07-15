@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/tab_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/map_refresh" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="10dp" android:src="@drawable/btn_refresh" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/map_addr" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_help" android:layout_toLeftOf="@+id/map_refresh" android:layout_toRightOf="@+id/tab_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/view1_countlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="3">
+            <ImageView android:id="@+id/icon1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/icon_round_orange" android:layout_weight="1" style="@r$style/img_basic"/>
+            <ImageView android:id="@+id/icon2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/icon_round_gray" android:layout_weight="1" style="@r$style/img_basic"/>
+            <ImageView android:id="@+id/icon3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/icon_round_gray" android:layout_weight="1" style="@r$style/img_basic"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageButton android:id="@+id/help_prevbnt" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_page_prev" android:layout_above="@+id/view1_countlayout" android:layout_below="@+id/tabbar" style="@r$style/img_basic"/>
+    <ImageButton android:id="@+id/help_nextbnt" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_page_next" android:layout_above="@+id/view1_countlayout" android:layout_below="@+id/tabbar" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+    <ViewFlipper android:id="@+id/help_viewflipper" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/help_nextbnt" android:layout_toRightOf="@+id/help_prevbnt" android:layout_above="@+id/view1_countlayout" android:layout_below="@+id/tabbar">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/helpview1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_info01" style="@r$style/img_basic"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/helpview2" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_info02" style="@r$style/img_basic"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/helpview3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_info03" style="@r$style/img_basic"/>
+        </RelativeLayout>
+    </ViewFlipper>
+</RelativeLayout>

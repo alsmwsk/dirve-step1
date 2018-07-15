@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="wrap_content" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/map_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/map_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="10dp" android:src="@drawable/btn_refresh" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/map_addr" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_location" android:layout_toLeftOf="@+id/map_refresh" android:layout_toRightOf="@+id/map_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/text22sp_center"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabbar">
+        <com.google.android.maps.MapView android:enabled="true" android:id="@+id/map_view" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:apiKey="0gD7YEiCgFTsg01FA85jSOeA-ObU0blKoGrGINg"/>
+        <ImageButton android:id="@+id/map_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/btn_mapcall" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@r$style/img_basic"/>
+    </RelativeLayout>
+</RelativeLayout>

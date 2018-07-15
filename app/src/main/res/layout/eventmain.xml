@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/event_title" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabbar" style="@r$style/sub_page_bg">
+        <ListView android:id="@+id/event_list" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#0000" style="@r$style/list_divider"/>
+    </RelativeLayout>
+</RelativeLayout>

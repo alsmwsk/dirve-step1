@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_event_height">
+        <item name="android:layout_height">35dp</item>
+    </style>
+    <style name="main_sub_img">
+        <item name="android:background">#0000</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:contentDescription">@string/img_text</item>
+    </style>
+    <style name="main_title_img">
+        <item name="android:background">#0000</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:contentDescription">@string/img_text</item>
+    </style>
+    <style name="number_type">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+    <style name="number_type_black">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+    <style name="step_next_button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/btn_next</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="step_prev_button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/btn_prov</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="tab_height">
+        <item name="android:layout_height">58dp</item>
+    </style>
+    <style name="tabbar_height">
+        <item name="android:layout_height">43dp</item>
+    </style>
+    <style name="tabbar_title_size">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text12sp_center">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text12sp_left">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text12sp_left_black">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text14sp_center">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text14sp_center_black">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text14sp_left">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text14sp_left_black">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text14sp_left_grey">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#cccccc</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text15sp_center">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text15sp_center_black">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text15sp_left">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text15sp_left_black">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text15sp_right_black">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">left|right|center_horizontal|fill_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text17sp_center">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text17sp_center_black">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text17sp_left">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text17sp_left_black">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text17sp_right">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="text17sp_right_black">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">left|right|center_horizontal|fill_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text17sp_right_grey">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:gravity">left|right|center_horizontal|fill_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text20sp_center">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text20sp_left">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text20sp_left_black">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text22sp_center">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text22sp_left">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text22sp_left_black">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text24sp_center">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text27sp_center">
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="text_daeri_call_btn">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+    </style>
+    <style name="CustomDialog">
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+    </style>
+    <style name="CustomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+    <style name="FacebookLoginButton">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/icon_facebook</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="content_bg">
+        <item name="android:background">#ffffff</item>
+    </style>
+    <style name="dist_btnweight">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">10</item>
+    </style>
+    <style name="dist_sideblank">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+    <style name="img_basic">
+        <item name="android:background">#0000</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:contentDescription">@string/img_text</item>
+    </style>
+    <style name="img_basic_fitXY">
+        <item name="android:background">#0000</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:contentDescription">@string/img_text</item>
+    </style>
+    <style name="img_basic_white">
+        <item name="android:background">#ffffff</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:contentDescription">@string/img_text</item>
+    </style>
+    <style name="list_divider">
+        <item name="android:divider">#8caeb1</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+    <style name="step_content_layout">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="sub_page_bg">
+        <item name="android:background">#e6e6e6</item>
+    </style>
+    <style name="top_background">
+        <item name="android:background">#0000</item>
+        <item name="android:src">@drawable/bg_subtabbar</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:contentDescription">@string/img_text</item>
+    </style>
+    <style name="top_step_bar_layout">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="top_step_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/img_text</item>
+    </style>
+    <style name="unline_bg">
+        <item name="android:background">#8caeb1</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+</resources>

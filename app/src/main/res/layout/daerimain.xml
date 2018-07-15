@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/daeri_mainlayout" android:background="@drawable/bg_main" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="18">
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4">
+            <LinearLayout android:orientation="vertical" android:id="@+id/topimagelayout" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+                <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2"/>
+                <ImageView android:id="@+id/daeri_logo" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/icon_logo" android:layout_weight="5" style="@r$style/main_title_img"/>
+                <ImageView android:id="@+id/daeri_introimg" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/bg_title" android:layout_weight="2" style="@r$style/img_basic"/>
+                <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <ImageButton android:id="@+id/daeri_helpbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:src="@drawable/btn_help" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+            <TextView android:id="@+id/daeri_region" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:layout_alignTop="@+id/daeri_helpbtn" android:layout_alignBottom="@+id/daeri_helpbtn" style="@r$style/text15sp_left"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/daeri_pointlayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="10dp" android:weightSum="19" android:layout_weight="5">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5"/>
+            <ImageView android:id="@+id/daeri_car" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/icon_car" android:layout_weight="7" style="@r$style/img_basic"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="7">
+                <ImageButton android:id="@+id/daeri_pointhisbtn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_point" style="@r$style/img_basic"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                    <TextView android:gravity="center" android:id="@+id/daeri_point" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" style="@r$style/text27sp_center"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/locationlayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:layout_weight="1.5">
+            <TextView android:id="@+id/daeri_locationtitle" android:background="@drawable/btn_tran" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_locationnow" style="@r$style/text17sp_center"/>
+            <ImageButton android:id="@+id/daeri_locationrefreshbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_refresh" android:layout_alignTop="@+id/daeri_locationtitle" android:layout_alignBottom="@+id/daeri_locationtitle" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+            <TextView android:ellipsize="marquee" android:id="@+id/daeri_addr" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:text="@string/text_localloading" android:scrollHorizontally="true" android:singleLine="true" android:layout_toLeftOf="@+id/daeri_locationrefreshbtn" android:layout_toRightOf="@+id/daeri_locationtitle" android:layout_alignTop="@+id/daeri_locationtitle" android:layout_alignBottom="@+id/daeri_locationtitle" android:marqueeRepeatLimit="marquee_forever" style="@r$style/text17sp_left"/>
+            <ImageButton android:id="@+id/daeri_mapbtn" android:background="#0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/daeri_locationtitle" android:layout_alignTop="@+id/daeri_locationtitle" android:layout_alignRight="@+id/daeri_addr" android:layout_alignBottom="@+id/daeri_locationtitle"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/daeri_btnlayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="0dp" android:layout_weight="3.5">
+            <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/daeri_cashcallbtn" android:background="@drawable/btn_cash_call" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_cashcall" android:layout_weight="1" style="@r$style/text_daeri_call_btn"/>
+            </RelativeLayout>
+            <TextView android:layout_width="10dp" android:layout_height="wrap_content"/>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/daeri_cardcallbtn" android:background="@drawable/btn_card_call" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_cardcall" android:layout_weight="1" style="@r$style/text_daeri_call_btn"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/daeri_sublayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="10dp" android:layout_weight="4">
+            <ImageButton android:id="@+id/sub_prevbtn" android:padding="3dp" android:visibility="gone" android:layout_width="20dp" android:layout_height="match_parent" android:src="@drawable/btn_page_prev" style="@r$style/img_basic"/>
+            <ImageButton android:id="@+id/sub_nextbtn" android:padding="3dp" android:visibility="visible" android:layout_width="20dp" android:layout_height="match_parent" android:src="@drawable/btn_page_next" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+            <ViewFlipper android:id="@+id/sub_viewflipper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/sub_nextbtn" android:layout_toRightOf="@+id/sub_prevbtn">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sub_page1" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:weightSum="4">
+                    <ImageButton android:id="@+id/daeri_okcashbtn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/btn_cashbag" android:layout_weight="1" style="@r$style/main_sub_img"/>
+                    <ImageButton android:id="@+id/daeri_pointstroebtn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/btn_coupon" android:layout_weight="1" style="@r$style/main_sub_img"/>
+                    <ImageButton android:id="@+id/daeri_multicallbtn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/btn_multicall" android:layout_weight="1" style="@r$style/main_sub_img"/>
+                    <ImageButton android:id="@+id/daeri_recommendbtn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/btn_recommend" android:layout_weight="1" style="@r$style/main_sub_img"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sub_page2" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:weightSum="4">
+                    <ImageButton android:id="@+id/daeri_logisticebtn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/btn_carphonebook" android:layout_weight="1" style="@r$style/main_sub_img"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3"/>
+                </LinearLayout>
+            </ViewFlipper>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/eventlayout" android:background="@drawable/bg_eventpopup" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/daeri_eventimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/icon_event" android:layout_alignTop="@+id/daeri_eventtitle" android:layout_alignBottom="@+id/daeri_eventtitle" style="@r$style/img_basic"/>
+            <ImageView android:id="@+id/daeri_arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_arrow_white_up" android:layout_alignTop="@+id/daeri_eventtitle" android:layout_alignBottom="@+id/daeri_eventtitle" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+            <TextSwitcher android:id="@+id/daeri_eventtitle" android:layout_width="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:inAnimation="@anim/push_up_in" android:outAnimation="@anim/push_up_out" android:layout_toLeftOf="@+id/daeri_arrow_up" android:layout_toRightOf="@+id/daeri_eventimg" style="@r$style/main_event_height"/>
+            <ImageButton android:id="@+id/daeri_eventpopupbtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/daeri_eventtitle" android:layout_alignBottom="@+id/daeri_eventtitle" style="@r$style/img_basic"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/eventpopuplayout" android:background="@drawable/bg_eventpopup" android:paddingBottom="10dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/popup_eventtitlelayout" android:background="#0000" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/popup_eventimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/icon_event" android:layout_alignTop="@+id/popup_eventtitle" android:layout_alignBottom="@+id/popup_eventtitle" style="@r$style/img_basic"/>
+            <ImageView android:id="@+id/popup_arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_arrow_white_down" android:layout_alignTop="@+id/popup_eventtitle" android:layout_alignBottom="@+id/popup_eventtitle" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+            <TextSwitcher android:id="@+id/popup_eventtitle" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:inAnimation="@anim/push_up_in" android:outAnimation="@anim/push_up_out" android:layout_toLeftOf="@+id/popup_arrow_down" android:layout_toRightOf="@+id/popup_eventimg" style="@r$style/text17sp_left"/>
+            <ImageButton android:id="@+id/popup_closebtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/popup_eventtitle" android:layout_alignBottom="@+id/popup_eventtitle" style="@r$style/img_basic"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/popup_eventcontentlayout" android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/popup_eventtitlelayout">
+            <RelativeLayout android:id="@+id/eventrow_text" android:background="#0000" android:padding="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/eventrow_text_content" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" style="@r$style/text14sp_left_black"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/eventrow_image" android:background="#0000" android:padding="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/eventrow_img_imageview" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/img_basic"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/eventrow_web" android:background="#0000" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/eventrow_web_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/webview_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_web_error" style="@r$style/img_basic_white"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

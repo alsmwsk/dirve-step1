@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_notice" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/listFrame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_below="@+id/tabbar" style="@r$style/content_bg">
+        <ListView android:id="@+id/list" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#0000" style="@r$style/list_divider"/>
+    </RelativeLayout>
+</RelativeLayout>

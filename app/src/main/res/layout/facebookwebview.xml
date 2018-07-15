@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <joy.common.NonLeakingWebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/webview_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_web_error" style="@r$style/img_basic_white"/>
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" android:layout_height="45dp" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/top_refresh" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="10dp" android:src="@drawable/btn_refresh" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+        <TextView android:ellipsize="marquee" android:id="@+id/top_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollHorizontally="true" android:singleLine="true" android:layout_toLeftOf="@+id/top_refresh" android:layout_toRightOf="@+id/top_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" android:marqueeRepeatLimit="marquee_forever" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_qna" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/listFrame" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabbar">
+        <RelativeLayout android:gravity="center" android:id="@+id/save_layout" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@r$style/sub_page_bg">
+            <Button android:id="@+id/savebtn" android:background="@drawable/btn_basic_green" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_req" style="@r$style/text22sp_center"/>
+        </RelativeLayout>
+        <ListView android:id="@+id/list" android:background="#ffffff" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:choiceMode="none" android:layout_above="@+id/save_layout" android:layout_below="@+id/qna_kakaolayout" style="@r$style/list_divider"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/qna_kakaolayout" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:gravity="center" android:id="@+id/qna_btnlayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignTop="@+id/qna_etc" android:layout_alignBottom="@+id/qna_etc" android:layout_alignParentRight="true">
+                <RelativeLayout android:id="@+id/qna_yellowidview" android:background="#fff313" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="3dp">
+                    <ImageView android:id="@+id/qna_yellowidviewimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_kakaotalk" style="@r$style/img_basic"/>
+                    <TextView android:textColor="#533a3c" android:id="@+id/qna_yellowidviewtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_yellowid" android:layout_toRightOf="@+id/qna_yellowidviewimg" android:layout_alignTop="@+id/qna_yellowidviewimg" android:layout_alignBottom="@+id/qna_yellowidviewimg" style="@r$style/text15sp_center_black"/>
+                    <ImageButton android:id="@+id/qna_yellowidviewbtn" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_alignLeft="@+id/qna_yellowidviewimg" android:layout_alignRight="@+id/qna_yellowidviewtext" style="@r$style/img_basic"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textColor="#75a0b1" android:id="@+id/qna_etc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_qnaetc" android:layout_toLeftOf="@+id/qna_btnlayout" style="@r$style/text14sp_left"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

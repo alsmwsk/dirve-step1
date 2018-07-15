@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/popup_bg" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/popup" android:background="@drawable/bg_popup" android:paddingLeft="10dp" android:paddingTop="7dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/titlebox" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/titleimage" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/icon" style="@r$style/img_basic_fitXY"/>
+            <TextView android:id="@+id/titleText" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/titleimage" style="@r$style/text17sp_left"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/underline1" android:layout_width="match_parent" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/titlebox" style="@r$style/unline_bg"/>
+        <TextView android:id="@+id/contentText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/underline1" style="@r$style/text15sp_left"/>
+        <TextView android:id="@+id/underline2" android:layout_width="match_parent" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/contentText" style="@r$style/unline_bg"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/btnbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/underline2">
+            <Button android:id="@+id/runbtn" android:background="@drawable/btn_basic_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/text_run" android:layout_weight="1" style="@r$style/text15sp_center"/>
+            <Button android:id="@+id/exitbtn" android:background="@drawable/btn_basic_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/text_close" android:layout_weight="1" style="@r$style/text15sp_center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

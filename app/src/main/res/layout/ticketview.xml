@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_ticket" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/tabbar" style="@r$style/content_bg">
+        <ImageView android:id="@+id/ticket_icon" android:layout_width="wrap_content" android:layout_height="45dp" android:src="@drawable/icon_round_gray" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/ticket_title" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:text="쿠폰번호" android:layout_toRightOf="@+id/ticket_icon" style="@r$style/text17sp_left_black"/>
+        <EditText android:id="@+id/ticket_edit" android:background="@drawable/bg_edit_grey" android:layout_width="match_parent" android:layout_height="45dp" android:singleLine="true" android:maxLength="20" android:layout_toRightOf="@+id/ticket_title" android:inputType="textCapCharacters" style="@r$style/text17sp_left_black"/>
+        <TextView android:id="@+id/ticket_etc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/text_couponetc" android:layout_below="@+id/ticket_edit" style="@r$style/text14sp_left_black"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4" android:layout_below="@+id/ticket_etc">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Button android:id="@+id/ticket_savebtn" android:background="@drawable/btn_basic_green" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_req" android:layout_weight="2" style="@r$style/text20sp_center"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

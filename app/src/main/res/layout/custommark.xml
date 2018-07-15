@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/balloon_main_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@+id/marker_addr" android:background="@drawable/bg_mapaddresspin" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="19dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@r$style/text17sp_center_black"/>/&gt;
+
+</FrameLayout>

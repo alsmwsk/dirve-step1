@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_basicinfo" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/basicinfo_box" android:padding="10dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/tabbar" style="@r$style/content_bg">
+        <TextView android:id="@+id/basicinfo_regin" android:layout_width="wrap_content" android:layout_height="45dp" android:text="@string/text_region" style="@r$style/text17sp_left_black"/>
+        <Spinner android:id="@+id/basicinfo_regionspinner" android:background="@drawable/bg_spinner_grey" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/basicinfo_regin"/>
+        <TextView android:id="@+id/basicinfo_tel_no" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginTop="5dp" android:text="@string/text_tel" android:layout_below="@+id/basicinfo_regin" style="@r$style/text17sp_left_black"/>
+        <EditText android:id="@+id/basicinfo_teledit" android:background="@drawable/bg_edit_grey" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_toRightOf="@+id/basicinfo_tel_no" android:layout_below="@+id/basicinfo_regin" android:inputType="number" style="@r$style/text17sp_left_black"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/basicinfo_teledit">
+            <Button android:id="@+id/basicinfo_compbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_save_text" style="@r$style/step_next_button"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

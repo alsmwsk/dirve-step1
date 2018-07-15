@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_qna" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/save_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@r$style/sub_page_bg">
+        <Button android:id="@+id/savebtn" android:background="@drawable/btn_basic_green" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_req" style="@r$style/text22sp_center"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/inputbox" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_above="@+id/save_layout" android:layout_below="@+id/tabbar" style="@r$style/content_bg">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/titlebox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+            <TextView android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="5dp" android:text="@string/text_qnatitle" style="@r$style/text17sp_left_black"/>
+            <EditText android:id="@+id/titleEdit" android:background="@drawable/bg_edit_grey" android:layout_width="match_parent" android:layout_height="40dp" android:lines="1" android:singleLine="true" android:maxLength="50" android:layout_toRightOf="@+id/title" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/contentbox" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlebox">
+            <TextView android:gravity="center_vertical" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/text_qnacontent" style="@r$style/text17sp_left_black"/>
+            <EditText android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/contentEdit" android:background="@drawable/bg_edit_grey" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLength="1000" android:layout_below="@+id/content" android:inputType="text" style="@r$style/text17sp_left_black"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

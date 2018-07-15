@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/img_imglayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_imageview" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@r$style/img_basic_fitXY"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/img_bottomlayout" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/img_imglayout">
+        <CheckBox android:id="@+id/img_check" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_chkbox_grey" android:text="다시 보지 않기" style="@r$style/text15sp_left_black"/>
+        <ImageButton android:id="@+id/img_closebtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_popupclose" android:layout_alignTop="@+id/img_check" android:layout_alignBottom="@+id/img_check" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+    </RelativeLayout>
+</RelativeLayout>

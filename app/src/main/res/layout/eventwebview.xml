@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/eventImageCount" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginBottom="1dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/eventmain" android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:layout_above="@+id/eventImageCount">
+        <WebView android:id="@+id/eventwebview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/webview_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_web_error" style="@r$style/img_basic_white"/>
+        <ImageButton android:id="@+id/webbtn" android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

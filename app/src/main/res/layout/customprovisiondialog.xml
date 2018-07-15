@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" style="@r$style/sub_page_bg">
+    <TextView android:gravity="center" android:id="@+id/provision_title" android:background="@drawable/bg_subtabbar" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_provision_title" style="@r$style/text17sp_center"/>
+    <ImageButton android:id="@+id/provision_close" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_close" android:layout_alignTop="@+id/provision_title" android:layout_alignBottom="@+id/provision_title" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+    <WebView android:id="@+id/provision_content" android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_below="@+id/provision_title"/>
+    <ImageView android:id="@+id/webview_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_web_error" android:layout_below="@+id/provision_title" style="@r$style/img_basic_white"/>
+</RelativeLayout>

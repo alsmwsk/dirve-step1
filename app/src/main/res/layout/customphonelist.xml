@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="wrap_content" style="@r$style/top_background"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="주소록" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/text24sp_center"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/textlayout" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tabbar">
+        <TextView android:id="@+id/choosetext" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" style="@r$style/text15sp_right_black"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/btnlayout" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="11" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/choosebtn" android:background="@drawable/btn_basic_green" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_choose" android:layout_weight="4" style="@r$style/text15sp_center"/>
+        <TextView android:id="@+id/blank" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/closebtn" android:background="@drawable/btn_basic_grey" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_close" android:layout_weight="4" style="@r$style/text15sp_center"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/listlayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_above="@+id/btnlayout" android:layout_below="@+id/textlayout" style="@r$style/content_bg">
+        <ListView android:id="@+id/phonelist" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#0000" style="@r$style/list_divider"/>
+    </FrameLayout>
+</RelativeLayout>

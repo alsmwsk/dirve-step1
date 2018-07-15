@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#0000" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/change_reqdate" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@r$style/text15sp_left_black"/>
+    <TextView android:textColor="#cc3333" android:id="@+id/change_reqcash" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/change_reqdate" style="@r$style/text15sp_right_black"/>
+    <TextView android:id="@+id/change_plandate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/change_reqdate" style="@r$style/text15sp_left_black"/>
+    <TextView android:id="@+id/change_statetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_statetitle" android:layout_below="@+id/change_plandate" style="@r$style/text15sp_left_black"/>
+    <TextView android:textColor="#3399cc" android:id="@+id/change_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/change_statetext" android:layout_below="@+id/change_plandate" style="@r$style/text15sp_left_black"/>
+    <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/change_state">
+        <TextView android:textColor="#999999" android:id="@+id/change_account" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@r$style/text12sp_left"/>
+        <TextView android:textColor="#999999" android:id="@+id/change_accountnm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/change_account" style="@r$style/text12sp_left"/>
+    </RelativeLayout>
+</RelativeLayout>

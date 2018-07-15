@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com_kakao_accounts_array">
+        <item>@string/com_kakao_kakaotalk_account</item>
+        <item>@string/com_kakao_other_kakaoaccount</item>
+        <item>@string/com_kakao_account_cancel</item>
+    </array>
+    <array name="cast_expanded_controller_default_control_buttons">
+        <!--<item>@id/cast_button_type_closed_caption</item>-->
+        <!--<item>@id/cast_button_type_skip_previous</item>-->
+        <!--<item>@id/cast_button_type_skip_next</item>-->
+        <!--<item>@id/cast_button_type_mute_toggle</item>-->
+    </array>
+    <array name="cast_mini_controller_default_control_buttons">
+        <!--<item>@id/cast_button_type_empty</item>-->
+        <!--<item>@id/cast_button_type_empty</item>-->
+        <!--<item>@id/cast_button_type_play_pause_toggle</item>-->
+    </array>
+    <array name="sort_type">
+        <item>최저가</item>
+        <item>최고가</item>
+    </array>
+</resources>

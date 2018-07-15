@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_popup" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_recommendation" style="@r$style/text17sp_center"/>
+    <TextView android:id="@+id/dialog_unline" android:background="#8caeb1" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@+id/dialog_title"/>
+    <TextView android:id="@+id/dialog_content" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/dialog_unline" style="@r$style/text15sp_left"/>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/dialog_recommendlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@+id/dialog_content">
+        <ImageButton android:id="@+id/dialog_recommendkakaobtn" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7dp" android:src="@drawable/icon_kakaotalk" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/dialog_recommendkakaostorybtn" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7dp" android:src="@drawable/icon_story" android:layout_toRightOf="@+id/dialog_recommendkakaobtn" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/dialog_recommendfacebookbtn" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7dp" android:src="@drawable/icon_facebook" android:layout_toRightOf="@+id/dialog_recommendkakaostorybtn" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/dialog_recommendtwitterbtn" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7dp" android:src="@drawable/icon_twitter" android:layout_toRightOf="@+id/dialog_recommendfacebookbtn" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/dialog_recommendbandbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7dp" android:src="@drawable/icon_band" android:layout_toRightOf="@+id/dialog_recommendtwitterbtn" style="@r$style/img_basic"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:layout_below="@+id/dialog_recommendlayout">
+        <Button android:id="@+id/dialog_closebtn" android:background="@drawable/btn_icon_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_close" style="@r$style/text17sp_center"/>
+    </RelativeLayout>
+</RelativeLayout>

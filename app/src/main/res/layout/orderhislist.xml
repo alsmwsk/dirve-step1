@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/sub_page_bg">
+    <RelativeLayout android:id="@+id/tabbar" android:layout_width="match_parent" style="@r$style/tabbar_height">
+        <ImageView android:id="@+id/topbg" android:layout_width="match_parent" android:layout_height="match_parent" style="@r$style/top_background"/>
+        <ImageButton android:id="@+id/top_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="2dp" android:src="@drawable/btn_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/img_basic"/>
+        <ImageButton android:id="@+id/top_refresh" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="10dp" android:src="@drawable/btn_refresh" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" android:layout_alignParentRight="true" style="@r$style/img_basic"/>
+        <TextView android:id="@+id/top_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_orderhistory" android:layout_toLeftOf="@+id/top_refresh" android:layout_toRightOf="@+id/top_back" android:layout_alignTop="@+id/topbg" android:layout_alignBottom="@+id/topbg" style="@r$style/tabbar_title_size"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_below="@+id/tabbar" style="@r$style/content_bg">
+        <ListView android:id="@+id/orderhislist" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#0000" android:cacheColorHint="#00000000" android:choiceMode="none" style="@r$style/list_divider"/>
+    </RelativeLayout>
+</RelativeLayout>

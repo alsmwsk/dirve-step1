@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="#0000" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15dp" android:textColor="#ffffff" android:id="@+id/hisdate" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="20dp" android:textColor="#ffffff" android:id="@+id/prodname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@+id/hisdate" android:layout_alignTop="@+id/hisdate" android:layout_alignBottom="@+id/hisdate"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_popup2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+    <ImageView android:id="@+id/locationicon" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="5dp" android:src="@drawable/icon_round" style="@r$style/img_basic"/>
+    <TextView android:id="@+id/location" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/text_location" android:layout_toRightOf="@+id/locationicon" style="@r$style/text17sp_left"/>
+    <TextView android:id="@+id/locationmsg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_below="@+id/locationicon" style="@r$style/text17sp_center"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/calllayout" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/locationmsg">
+        <Button android:id="@+id/cashcallbtn" android:background="@drawable/btn_icon_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/text_cashcall" android:layout_weight="1" style="@r$style/text17sp_center"/>
+        <Button android:id="@+id/cardcallbtn" android:background="@drawable/btn_icon_green" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/text_cardcall" android:layout_weight="1" style="@r$style/text17sp_center"/>
+    </LinearLayout>
+</RelativeLayout>
