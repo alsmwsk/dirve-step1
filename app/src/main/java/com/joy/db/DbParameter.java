@@ -53,10 +53,12 @@ public class DbParameter extends DbUtil {
                     this.parameter.data[i] = (byte) 0;
                 }
             }
-            return this.parameter.size;
+//            return this.parameter.size;
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return this.parameter.size;
     }
 
     public long setParameter(int type, int direction, byte[] value, int size) {
@@ -92,9 +94,10 @@ public class DbParameter extends DbUtil {
                     this.parameter.data[i] = (byte) 0;
                 }
             }
-            return this.parameter.size;
+//            return this.parameter.size;
         } catch (Exception e) {
         }
+        return this.parameter.size;
     }
 
     public ParameterStruct getParameter() {

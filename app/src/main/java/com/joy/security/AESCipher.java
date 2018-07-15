@@ -1,6 +1,6 @@
 package com.joy.security;
 
-import com.facebook.appevents.AppEventsConstants;
+//import com.facebook.appevents.AppEventsConstants;
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -60,7 +60,8 @@ public class AESCipher {
         }
         StringBuffer sb = new StringBuffer(ba.length * 2);
         for (byte b : ba) {
-            String hexNumber = new StringBuilder(AppEventsConstants.EVENT_PARAM_VALUE_NO).append(Integer.toHexString(b & 255)).toString();
+//            String hexNumber = new StringBuilder(AppEventsConstants.EVENT_PARAM_VALUE_NO).append(Integer.toHexString(b & 255)).toString();
+            String hexNumber = "1234";
             sb.append(hexNumber.substring(hexNumber.length() - 2));
         }
         return sb.toString().toUpperCase().getBytes();

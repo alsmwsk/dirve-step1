@@ -1,7 +1,7 @@
 package com.joy.security;
 
 import android.support.v4.view.accessibility.AccessibilityEventCompat;
-import com.google.android.gms.drive.DriveFile;
+//import com.google.android.gms.drive.DriveFile;
 
 class DES_SPboxes {
     private static final int BOXLEN = 64;
@@ -11,9 +11,9 @@ class DES_SPboxes {
     static final int[] bits3 = new int[]{134217728, 8, 131072, 512};
     static final int[] bits4 = new int[]{1, 8388608, 8192, 128};
     static final int[] bits5 = new int[]{1073741824, 256, 524288, 33554432};
-    static final int[] bits6 = new int[]{16384, AccessibilityEventCompat.TYPE_WINDOWS_CHANGED, 16, DriveFile.MODE_WRITE_ONLY};
+    static final int[] bits6 = new int[]{16384, AccessibilityEventCompat.TYPE_WINDOWS_CHANGED, 16, 2}; //DriveFile.MODE_READ_ONLY 마지막인자. 2로바꿔버렸음
     static final int[] bits7 = new int[]{67108864, 2048, 2097152, 2};
-    static final int[] bits8 = new int[]{4096, 262144, 64, DriveFile.MODE_READ_ONLY};
+    static final int[] bits8 = new int[]{4096, 262144, 64, 2}; //DriveFile.MODE_READ_ONLY 마지막인자. 2로바꿔버렸음
     static final byte[] ds1;
     static final byte[] ds2;
     static final byte[] ds3;

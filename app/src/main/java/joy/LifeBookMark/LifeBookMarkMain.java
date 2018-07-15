@@ -30,6 +30,8 @@ import com.kakao.util.helper.Utility;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
+
+import joy.LifeBookMark.Store.SettingStepViewActivity;
 import joy.common.CommonUtil;
 import joy.common.JoyDbAdapter;
 import joy.common.JoyLocationUtil;
