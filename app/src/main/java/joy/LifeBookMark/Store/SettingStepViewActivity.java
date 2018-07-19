@@ -119,6 +119,7 @@ public class SettingStepViewActivity extends Activity implements OnClickListener
     private RelativeLayout tabBarInfoLayout3 = null;
     private TextView tabBarTitleText = null;
 
+    //데이터 저장 함수..
     private class CompletionTask extends AsyncTask<Void, Void, String> {
         private CompletionTask() {
         }
